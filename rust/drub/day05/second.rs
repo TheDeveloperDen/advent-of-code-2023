@@ -239,7 +239,7 @@ fn get_seed_ranges(entry: &str) -> io::Result<Vec<SeedRange>> {
                 data.push(SeedRange {
                     start: num,
                     end: num + new_num - 1,
-                    updated: true,
+                    updated: false,
                 });
                 last_num = None;
             }
